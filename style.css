@@ -1,0 +1,206 @@
+body, html {
+  margin: 0;
+  height: 100%; 
+  overflow: hidden;
+/*----------------------------------------------------------------------------------------*/
+.header {
+  background-color: #2d2a58;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 46px;
+  padding-right: 40px;
+}
+/*-------------------------------------------------------------------------------------------*/
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+}
+.signup {
+  background-color: #E7005E;
+  color: white;
+  font-family: "Poppins", sans-serif ;
+  border: none;
+  padding: 8px 25px;
+  border-radius: 60px;
+  font-weight: 400;
+  cursor: pointer;
+  margin-right: -30px; 
+  z-index: 2;
+}
+.login {
+  background: rgba(231, 0, 94, 0.45);
+  color: white;
+  font-family: "Poppins", sans-serif ;
+  border: none;
+  padding: 8px 30px;
+  border-radius: 60px;
+  font-weight: 400;
+  padding-left: 45px;
+  cursor: pointer; 
+  z-index: 1;
+}
+.avatar {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+/*------------------------------------------------------------------------------------------*/
+.main-content {
+  background-color: #242145;
+  min-height: calc(100vh - 75px); 
+  padding-top: 5px;
+}
+a{
+  color: white;
+  font-weight: 250;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  opacity: 0.7;
+  transition: color 0.4s;
+  z-index: 3;
+}
+/*-------------------------------------------------------------------------------------------*/
+ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+ul li {
+  position: relative;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 250;
+  padding: 10px;
+  transition: color 0.4s;
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  opacity: 0.7;
+}
+a:hover {
+  color: #ff007a;
+}
+/*----------------------------------------------------------------------------------------*/
+.search-container:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  justify-content: center;  /* Căn giữa dọc trong khu vực hero */
+  height: 230px;  /* Điều chỉnh chiều cao phù hợp với phần trên */
+  position: relative;
+  gap: 15px;
+}
+.search-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  justify-content: center;
+  border-radius: 70px;
+  z-index: 3;
+}
+.search-container input {
+  background: transparent;
+  width: 630px;
+  padding: 15px 30px;
+  border-radius: 80px;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+}
+/*-------------------------------------------------------------------*/
+.hero-section {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100vw;
+  height: 620px; /* Điều chỉnh chiều cao tùy thích */
+  background: url("/img/backgroundmem.png") no-repeat center bottom;
+  background-size: cover;
+  z-index: 2
+}
+.hero-text {
+  max-width: 600px;
+  padding-left: 80px;
+  padding-top: 210px;
+}
+
+.hero-text h1 {
+  font-size: 57px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #E7005E, #FF7A02);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 63px;
+}
+
+.hero-text p {
+  font-size: 15px;
+  margin: 15px 0 30px;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  line-height: 1.6;
+}
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 12px 25px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background-color: #E7005E;
+  color: white;
+  transition: opacity 0.4s;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  transition: opacity 0.4s;
+}
+
+.btn-primary:hover {
+  opacity: 0.8;
+}
+.btn-secondary:hover {
+  opacity: 0.8;
+}
