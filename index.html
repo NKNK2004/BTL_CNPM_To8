@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CodeFinity</title>
+    <link rel="icon" type="image/png" href="img/logo_website.png" />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,43 +21,48 @@
     />
   </head>
   <body>
-    <header class="header">
-      <div class="logo">
-        <img src="img/logo_website.png" alt="Logo" width="30" />
-        C O D E F I N I T Y
-      </div>
+    <div class="main-content">
+      <header class="header">
+        <div class="logo-namewebsite">
+          <img src="img/logo_website.png" alt="Logo" width="30" />
+          C O D E F I N I T Y
+        </div>
 
-      <div class="nav">
-        <div>
-          <button class="signup">Sign Up</button>
-          <button class="login">Log In</button>
+        <div class="signup-login-avatar">
+          <div>
+            <button class="signup">Sign Up</button>
+            <button class="login">Log In</button>
+          </div>
+          <div class="avatar">
+            <img src="img/avatar_user.png" width="27px" alt="User" />
+          </div>
         </div>
-        <div class="avatar">
-          <img src="img/avatar_user.png" width="27px" alt="User" />
-        </div>
-      </div>
-    </header>
-    <section class="main-content">
+      </header>
       <div>
-        <ul>
-          <li><a href="/courses/c.html">C</a></li>
-          <li><a href="/courses/cpp.html">C++</a></li>
-          <li><a href="/courses/python.html">Python</a></li>
-          <li><a href="/courses/java.html">Java</a></li>
-          <li><a href="/courses/html.html">HTML</a></li>
-          <li><a href="/courses/css.html">CSS</a></li>
-          <li><a href="/courses/javascript.html">JavaScript</a></li>
-          <li><a href="/courses/sql.html">SQL</a></li>
-        </ul>
+        <div>
+          <ul>
+            <li><a href="/courses/c.html">C</a></li>
+            <li><a href="/courses/cpp.html">C++</a></li>
+            <li><a href="/courses/python.html">Python</a></li>
+            <li><a href="/courses/java.html">Java</a></li>
+            <li><a href="/courses/html.html">HTML</a></li>
+            <li><a href="/courses/css.html">CSS</a></li>
+            <li><a href="/courses/javascript.html">JavaScript</a></li>
+            <li><a href="/courses/sql.html">SQL</a></li>
+          </ul>
+        </div>
+        <div class="img-background">
+          <img src="img/backgroundwave.png" alt="error" />
+        </div>
       </div>
-      <div class="hero">
-        <form class="search-container" action="search.html" method="GET">
+      <div class="search-container">
+        <form class="Search" action="search.html" method="GET">
           <input type="text" name="q" placeholder="Search . . ." required />
         </form>
         <a href="">Don't know where to start</a>
       </div>
-      <div class="hero-section">
-        <div class="hero-text">
+      <div class="text-img-bottomcontent">
+        <div class="text-bottomcontent">
           <h1>
             <span class="gradient-text">Master Code</span><br />Master The
             Future
@@ -65,12 +71,12 @@
             Tương lai thuộc về những ai biết code. Học lập trình ngay hôm nay,
             nâng cấp kỹ năng và mở ra vô số cơ hội nghề nghiệp hấp dẫn.
           </p>
-          <div class="hero-buttons">
-            <button class="btn-primary">Lộ trình học</button>
-            <button class="btn-secondary">Thử thách và bài tập</button>
+          <div class="buttons-bottom">
+            <button class="buttons-lotrinhhoc">Lộ trình học</button>
+            <button class="buttons-thuthach">Thử thách và bài tập</button>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   </body>
 </html>
