@@ -1,23 +1,26 @@
 body {
   height: 800px;
-  overflow: auto;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: start;
+  position: relative;
+  min-width: 1450px;
+  overflow-x: auto;
 }
 /*------------------------------------------------------------------------------------------*/
 .main-content {
   background-color: #1b1834;
   position: relative;
   z-index: 2;
-  min-width: 100vw;
+  width: 100vw;
+  min-width: 1450px;
   overflow-x: auto;
 }
 .img-background {
   width: 100%;
-  height: 1000px;
+  height: 800px;
   position: absolute;
   top: 0;
   z-index: -1;
