@@ -3,4 +3,3 @@ function setVH() {
   document.documentElement.style.setProperty("--vh", `${vh}px`);
 }
 setVH();
-window.addEventListener("resize", setVH);

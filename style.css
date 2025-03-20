@@ -1,5 +1,4 @@
 body {
-  height: 800px;
   margin: 0;
   padding: 0;
   display: flex;
@@ -17,6 +16,7 @@ body {
   width: 100vw;
   min-width: 1450px;
   overflow-x: auto;
+  height: 100vh;
 }
 .img-background {
   width: 100%;
@@ -158,7 +158,7 @@ a:hover {
   position: relative;
   left: 0;
   width: 100%;
-  height: 100vh;
+
   background-size: cover;
 }
 .text-bottomcontent {
@@ -226,4 +226,12 @@ a:hover {
 }
 .buttons-thuthach:hover {
   opacity: 0.8;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 2.5;
 }
