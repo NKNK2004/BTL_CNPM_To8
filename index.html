@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,6 +16,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css"
       rel="stylesheet"
     />
   </head>
@@ -39,20 +43,40 @@
           </div>
         </div>
       </header>
+
+      <div class="sidebar" id="sidebar">
+        <h3>Lesson List</h3>
+        <ul id="lesson-list"></ul>
+      </div>
+
+      <div class="lesson-content" id="lesson-content">
+        <!-- Nội dung bài học sẽ được hiển thị ở đây -->
+      </div>
+
       <div>
         <div>
           <ul>
-            <li><a href="/courses/c.html">C</a></li>
-            <li><a href="/courses/cpp.html">C++</a></li>
-            <li><a href="/courses/python.html">Python</a></li>
-            <li><a href="/courses/java.html">Java</a></li>
-            <li><a href="/courses/html.html">HTML</a></li>
-            <li><a href="/courses/css.html">CSS</a></li>
-            <li><a href="/courses/javascript.html">JavaScript</a></li>
-            <li><a href="/courses/sql.html">SQL</a></li>
+            <li><button class="toggleSidebar" data-lang="c">C</button></li>
+            <li><button class="toggleSidebar" data-lang="cpp">C++</button></li>
+            <li>
+              <button class="toggleSidebar" data-lang="python">Python</button>
+            </li>
+            <li>
+              <button class="toggleSidebar" data-lang="java">Java</button>
+            </li>
+            <li>
+              <button class="toggleSidebar" data-lang="html">HTML</button>
+            </li>
+            <li><button class="toggleSidebar" data-lang="css">CSS</button></li>
+            <li>
+              <button class="toggleSidebar" data-lang="javascript">
+                JavaScript
+              </button>
+            </li>
+            <li><button class="toggleSidebar" data-lang="sql">SQL</button></li>
           </ul>
         </div>
-        <div class="img-background">
+        <div class="img-background" id="img-background">
           <img src="img/backgroundwave.png" alt="error" />
         </div>
       </div>
@@ -69,8 +93,9 @@
             Future
           </h1>
           <p>
-            Tương lai thuộc về những ai biết code. Học lập trình ngay hôm nay,
-            nâng cấp kỹ năng và mở ra vô số cơ hội nghề nghiệp hấp dẫn.
+            The future belongs to those who know how to code. Learn to code
+            today, upgrade your skills, and open up a world of exciting career
+            opportunities.
           </p>
           <div class="buttons-bottom">
             <button class="buttons-lotrinhhoc">Lộ trình học</button>
@@ -79,7 +104,17 @@
         </div>
       </div>
     </div>
+
     <script src="script.js"></script>
     <script src="auth.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-c.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-cpp.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-java.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-html.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-sql.min.js"></script>
   </body>
 </html>

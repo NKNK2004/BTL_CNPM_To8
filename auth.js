@@ -92,7 +92,9 @@ if (window.location.pathname.includes("index.html")) {
     const userInfo = users.find((user) => user.email === currentUser.email);
     signupLoginAvatar.innerHTML = `
             <div>
-                <span>Welcome, ${currentUser.username}</span>
+                <span style = " font-family :"Montserrat", sans-serif; color : #ffffff; ">Welcome, ${
+                  currentUser.username
+                }</span>
                 <button class="logout" onclick="logout()">Logout</button>
             </div>
             <div class="avatar" style="cursor: pointer" onclick="window.location.href='profile.html'">
